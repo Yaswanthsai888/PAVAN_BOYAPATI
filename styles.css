@@ -71,3 +71,24 @@ h2.subheading {
     transform: translateY(50px); /* Move down */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
 }
+body {
+    font-family: 'Merriweather', serif; /* Body font */
+    background-color: #fef6f2; /* Light background */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive; /* Heading font */
+    font-size: 3em;
+    color: #c85100; /* Warm orange */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive; /* Subheading font */
+    font-size: 2.5em;
+    color: #7b2d00; /* Darker shade */
+}
+
