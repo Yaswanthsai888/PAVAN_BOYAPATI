@@ -1,129 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&display=swap');
-
-/* Keyframes for animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-50px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideIn {
-    from { opacity: 0; transform: translateX(-100px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
-/* Global Styling */
 body {
-    font-family: 'Merriweather', serif;
-    background: #f6e4d8;
-    color: #6d4c41;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #fef6f2; /* Light background */
     margin: 0;
-    padding: 20px;
-    scroll-behavior: smooth;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
-/* Invitation container */
 .invitation-container {
-    max-width: 900px;
-    margin: auto;
-    padding: 30px;
-    border: 5px solid #c8a2c8;
-    border-radius: 15px;
-    background-color: #fff8e1;
-    position: relative;
-    animation: fadeIn 1s ease-in-out;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-h1, h2, p {
-    margin: 10px 0;
-    animation-fill-mode: forwards;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #ffddc1, #fca5a5); /* Soft gradient background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
 
 h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3em;
-    color: #a41e34;
+    font-size: 2.5em;
+    color: #c85100; /* Warm orange */
 }
 
-.subheading {
-    font-size: 1.5em;
-    color: #ff7043;
-    animation: fadeIn 1s ease-in-out;
+h2.subheading {
+    font-size: 1.8em;
+    color: #7b2d00; /* Darker shade */
 }
 
 .date, .details, .footer {
     font-size: 1.2em;
-    color: #4e342e;
-    margin-bottom: 40px;
-    animation: fadeIn 1s ease-in-out;
+    color: #6b3c00; /* Medium brown */
 }
 
-.rsvp-btn {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #8d6e63;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.rsvp-btn:hover {
-    background-color: #5d4037;
-    transform: scale(1.05);
-}
-
-/* Section Styling for Wedding Details */
-.wedding-section {
-    padding: 20px;
+.location {
     margin: 20px 0;
-    background-color: rgba(255, 239, 204, 0.7);
+}
+
+.location-button {
+    background-color: #ff5e00; /* Vibrant orange */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.location-button:hover {
+    background-color: #ff9e00; /* Lighter orange on hover */
+}
+
+.cultural-significance, .wedding-section {
+    padding: 50px 20px;
+    margin: 20px;
+    background-color: #fff5e1; /* Soft cream */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s ease-in-out;
-    animation: slideIn 1s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
     font-size: 2em;
-    color: #a41e34;
+    color: #c85100; /* Warm orange */
 }
 
 .section-content {
     font-size: 1.2em;
-    color: #3e2723;
-    margin-top: 10px;
-    line-height: 1.6;
+    color: #6b3c00; /* Medium brown */
 }
 
-/* Cultural Significance Section */
-.cultural-significance {
-    padding: 30px;
-    margin: 40px 0;
-    background-color: rgba(255, 224, 178, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 1s ease-in-out;
-}
-
-.cultural-significance h2 {
-    font-size: 2em;
-    color: #a41e34;
-}
-
-.cultural-significance p {
-    font-size: 1.2em;
-    color: #3e2723;
-    line-height: 1.6;
-}
-
-/* Scrolling animations */
-.wedding-section.active {
-    opacity: 1;
-    transform: translateY(0);
+.wedding-section {
+    opacity: 0; /* Initially hidden for scroll effect */
+    transform: translateY(50px); /* Move down */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
 }
