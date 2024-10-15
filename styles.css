@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&display=swap');
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Global Styling */
+body {
+    font-family: 'Merriweather', serif;
+    background: #f6e4d8;
+    color: #6d4c41;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Invitation container */
+.invitation-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border: 5px solid #c8a2c8;
+    border-radius: 15px;
+    background-color: #fff8e1;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, p {
+    margin: 10px 0;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #a41e34;
+}
+
+.subheading {
+    font-size: 1.5em;
+    color: #ff7043;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.date, .details, .footer {
+    font-size: 1.2em;
+    color: #4e342e;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.rsvp-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #8d6e63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rsvp-btn:hover {
+    background-color: #5d4037;
+    transform: scale(1.05);
+}
+
+/* Section Styling for Wedding Details */
+.wedding-section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgba(255, 239, 204, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+    animation: slideIn 1s ease-in-out;
+}
+
+.section-title {
+    font-size: 2em;
+    color: #a41e34;
+}
+
+.section-content {
+    font-size: 1.2em;
+    color: #3e2723;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Cultural Significance Section */
+.cultural-significance {
+    padding: 30px;
+    margin: 40px 0;
+    background-color: rgba(255, 224, 178, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cultural-significance h2 {
+    font-size: 2em;
+    color: #a41e34;
+}
+
+.cultural-significance p {
+    font-size: 1.2em;
+    color: #3e2723;
+    line-height: 1.6;
+}
+
+/* Scrolling animations */
+.wedding-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
