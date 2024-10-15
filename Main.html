@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Wedding Invitation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&display=swap');
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Global Styling */
+        body {
+            font-family: 'Merriweather', serif;
+            background: #f6e4d8;
+            color: #6d4c41;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            scroll-behavior: smooth;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Invitation container */
+        .invitation-container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            border: 5px solid #c8a2c8;
+            border-radius: 15px;
+            background-color: #fff8e1;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2, p {
+            margin: 10px 0;
+            animation-fill-mode: forwards;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3em;
+            color: #a41e34;
+        }
+
+        .subheading {
+            font-size: 1.5em;
+            color: #ff7043;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .date, .details, .footer {
+            font-size: 1.2em;
+            color: #4e342e;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .rsvp-btn {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #8d6e63;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .rsvp-btn:hover {
+            background-color: #5d4037;
+            transform: scale(1.05);
+        }
+
+        /* Section Styling for Wedding Details */
+        .wedding-section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: rgba(255, 239, 204, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-in-out;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #a41e34;
+        }
+
+        .section-content {
+            font-size: 1.2em;
+            color: #3e2723;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        /* Scrolling animations */
+        .wedding-section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Invitation Container -->
+    <div class="invitation-container">
+        <h1>మీకు స్వాగతం!</h1>
+        <h2 class="subheading">Priya మరియు Rahul వివాహానికి ఆహ్వానించబడుతున్నారు</h2>
+        <p class="date">తేదీ: డిసెంబర్ 12, 2024</p>
+        <p class="details">సమయం: సాయంత్రం 6:00 PM, స్థలం: రాయల్ ప్యాలెస్, జైపూర్</p>
+        <p class="footer">మన కుటుంబాల ఆశీర్వాదాలతో</p>
+        <button class="rsvp-btn">RSVP</button>
+    </div>
+
+    <!-- Wedding Details in Telugu -->
+    <section id="pelli-sandadi" class="wedding-section">
+        <h2 class="section-title">పెళ్ళి సందడి (Pre-Wedding Festivities)</h2>
+        <p class="section-content">పెళ్ళి సందడి అంటే వివాహానికి ముందు జరిగే ఆనందకరమైన వేడుకలు. ఇవి స్నేహితులు, కుటుంబ సభ్యులు పాల్గొంటారు, పాటలు పాడి డాన్స్ చేస్తారు, కొత్త దుస్తులు మరియు మాంగల్యాలు కొనుగోలు చేస్తారు.</p>
+    </section>
+
+    <section id="kanyadaanam" class="wedding-section">
+        <h2 class="section-title">కన్యాదానం (Kanyadaanam)</h2>
+        <p class="section-content">ఇది హిందూ పెళ్ళిలో ముఖ్యమైన ఘట్టం, కన్యా పిత అల్లుడికి తన కుమార్తెను భర్తగా ఇస్తాడు. ఇది పెళ్ళి సంబంధాన్ని ధృవీకరించడానికి అత్యంత పవిత్రమైన క్షణం.</p>
+    </section>
+
+    <section id="jeelakarra-bellam" class="wedding-section">
+        <h2 class="section-title">జీలకర్ర బెల్లం (Jeelakarra Bellam)</h2>
+        <p class="section-content">జీలకర్ర మరియు బెల్లం పెళ్లి కొడుకు మరియు పెళ్లి కూతురు మధ్య ఓ మహా మాంగల్య చిహ్నంగా ఉంచి, ఇది వారి జీవితంలో తియ్యని మరియు చేదైన క్షణాలు ఉంటాయని సూచిస్తుంది.</p>
+    </section>
+
+    <section id="saptapadi" class="wedding-section">
+        <h2 class="section-title">సప్తపది (Saptapadi)</h2>
+        <p class="section-content">సప్తపది అంటే పెళ్లి కూతురు మరియు పెళ్లి కొడుకు అగ్నిని చుట్టూ ఏడు అడుగులు వేయడం. ఇది వారి జీవన ప్రయాణం కలిసి కొనసాగుతుందని ప్రతిబింబిస్తుంది.</p>
+    </section>
+
+    <section id="mangalasutra-dharana" class="wedding-section">
+        <h2 class="section-title">మంగళసూత్ర ధరణ (Mangalasutra Dharana)</h2>
+        <p class="section-content">ఇది పెళ్ళిలో అత్యంత ముఖ్యమైన క్షణం, పెళ్లి కొడుకు పెళ్లి కూతురికి మంగళసూత్రాన్ని మెడలో ఉంచి, అతను ఆమెకు జీవితాంతం రక్షణగా ఉంటాడని హామీ ఇస్తాడు.</p>
+    </section>
+
+    <section id="talambralu" class="wedding-section">
+        <h2 class="section-title">తాళంబ్రాలు (Talambralu)</h2>
+        <p class="section-content">తాళంబ్రాలు అనేది ఆనందదాయకమైన ఘట్టం, పెళ్లి కూతురు మరియు పెళ్లి కొడుకు ఒకరి మీద ఒకరు ధాన్యాలు, ఆకులు మరియు పువ్వులు వేసి ఆనందంగా ఉంటారు.</p>
+    </section>
+
+    <!-- JavaScript for scroll-triggered animations -->
+    <script>
+        const sections = document.querySelectorAll('.wedding-section');
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+
+            sections.forEach(section => {
+                if (section.offsetTop < scrollPosition) {
+                    section.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
